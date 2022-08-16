@@ -19,7 +19,7 @@ public class UserController {
     }
 
     //create
-    @PostMapping("/new")
+    @PostMapping()
     public BaseResponse createUser(@RequestBody UserRequest userRequest) {
         return userService.createUser(userRequest);
     }
@@ -33,7 +33,7 @@ public class UserController {
 
     //delete
     @DeleteMapping("/{id}")
-    public BaseResponse deleteUser(@PathVariable("id")Long id){
+    public BaseResponse deleteUser(@PathVariable("id") Long id) {
         return userService.deleteUser(id);
     }
 }
