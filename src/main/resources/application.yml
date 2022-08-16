@@ -1,0 +1,15 @@
+server:
+    port: 8088
+    servlet:
+        context-path: /unit-test
+spring:
+    datasource:
+        url: jdbc:mysql://localhost:3306/unit_testing
+        password: password
+        username: arkar
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL5InnoDBDialect
