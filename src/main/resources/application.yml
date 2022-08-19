@@ -7,6 +7,9 @@ spring:
         url: jdbc:mysql://localhost:3306/unit_testing
         password: password
         username: arkar
+    data:
+        mongodb:
+            uri: mongodb://admin:YouKnowAdmin@localhost:27017/unit_testing
     jpa:
         hibernate:
             ddl-auto: update
